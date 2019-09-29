@@ -89,7 +89,6 @@ func main() {
 	}
 
 	ctx := context.TODO()
-
 	// Become the leader before proceeding
 	err = leader.Become(ctx, "logging-operator-lock")
 	if err != nil {
